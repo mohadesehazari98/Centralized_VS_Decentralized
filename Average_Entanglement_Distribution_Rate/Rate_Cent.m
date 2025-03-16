@@ -1,7 +1,6 @@
 function [Rate_out] = Rate_Cent(q_BSM, N, delta_t, L_0_in)
 % This function calculates the average rate of distributing N-qubit GHZ
-% entangled state using a 2D repeater approach. The parent system is 
-% generated using a centralized switch.
+% entangled state using a centralized switch.
 
 % Parameters:
 % q_BSM: The Probability of successful Bell state measurements.
@@ -10,13 +9,13 @@ function [Rate_out] = Rate_Cent(q_BSM, N, delta_t, L_0_in)
 % L_0_in: The final distance between neighboring nodes to which the 
 % entangled state is teleported (in kilometers).
 
-% Step 1: Adjust the distance to the central switch
+% Step 1: Adjust the distance to the central switch based on geometric
+% scaling factors.
 L_0 = L_0_in ./ (2 * sin(pi / N));
-% The formula adjusts the distance based on geometric scaling factors.
 
-% Step 2: Define constants for link efficiency and attenuation
+% Step 2: Define constants for link efficiency and attenuation.
 etha_c = 0.98;  % coupling efficiency (emission of the photon from the memory qubit)
-L_att = 20;  % Link attenuation (how much the signal weakens over a distance of 20 km)
+L_att = 20;  % Link attenuation (distance over which signal weakens by 1/e, in km)
 
 % Step 3: Calculate the link probability (q_link) based on the initial link length and attenuation
 q_link = 0.5 .* etha_c^2 .* exp(- L_0 ./ L_att); 
