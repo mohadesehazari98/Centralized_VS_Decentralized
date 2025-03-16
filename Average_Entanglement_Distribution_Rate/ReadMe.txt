@@ -67,8 +67,8 @@ These help visualize the trade-offs between different network designs.
 
 ✍️ Author
 
-Mohadese Hazari  
-📧 mohadesehazari98@gmail.com
+Mohadeseh Azari  
+📧 mohadesehazari1998@gmail.com
 
 📜 License
 
