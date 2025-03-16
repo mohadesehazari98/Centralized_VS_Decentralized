@@ -14,7 +14,7 @@ function [Rate_out] = Rate_Cent(q_BSM, N, delta_t, L_0_in)
 L_0 = L_0_in ./ (2 * sin(pi / N));
 
 % Step 2: Define constants for link efficiency and attenuation.
-etha_c = 0.98;  % coupling efficiency (emission of the photon from the memory qubit)
+etha_c = 0.95;  % coupling efficiency (emission of the photon from the memory qubit)
 L_att = 20;  % Link attenuation (distance over which signal weakens by 1/e, in km)
 
 % Step 3: Calculate the link probability (q_link) based on the initial link length and attenuation

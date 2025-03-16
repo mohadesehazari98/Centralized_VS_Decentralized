@@ -22,7 +22,7 @@ L_0 = L_0_in ./ 2;
 %-------------------------------------
 % Step 2: Define Link Efficiency Model
 %-------------------------------------
-etha_c = 0.98;      % Coupling efficiency (e.g., probability of emitting photon from memory qubit)
+etha_c = 0.95;      % Coupling efficiency (e.g., probability of emitting photon from memory qubit)
 L_att  = 20;        % Attenuation length (distance over which signal weakens by 1/e, in km)
 
 % Compute overall link success probability (includes coupling loss and fiber loss)
