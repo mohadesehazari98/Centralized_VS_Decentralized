@@ -1,78 +1,97 @@
+🚀 Average Entanglement Distribution Rate  
+Centralized vs. Decentralized Architectures in Quantum Networks  
 
-📡 Average Entanglement Distribution Rate — Centralized vs Decentralized Architectures
+📡 This repository provides MATLAB code for analyzing entanglement distribution rates in quantum networks, comparing centralized and decentralized strategies for GHZ state distribution in 2D repeater architectures.  
 
-This repository contains MATLAB code and analysis for evaluating the average entanglement distribution rate in quantum networks, focusing on Centralized vs Decentralized GHZ state distribution strategies across 2D repeater architectures.
+---
 
-📂 Folder Structure
+🏗 Folder Structure  
+📂 Average_Entanglement_Distribution_Rate/  
+📄 Rate_Cent.m → Computes centralized GHZ entanglement rate.  
+📄 Rate_Decent.m → Computes decentralized GHZ entanglement rate.  
+📄 Rate_2D.m → Calculates rate for multi-hop/multi-level 2D architectures.  
+📄 link_gen_prob.m → Computes link success probability (q_link) based on network geometry.  
+📄 F_T_max.m → Recursive function for hierarchical GHZ fusion (CDF calculations).  
+📄 README.txt → You’re reading this!  
 
-Average_Entanglement_Distribution_Rate/
-│
-├── Rate_Cent.m             % Centralized GHZ distribution rate calculation
-├── Rate_Decent.m           % Decentralized GHZ distribution rate calculation
-├── Rate_2D.m               % 2D GHZ distribution rate (multi-level/multi-hop)
-├── link_gen_prob.m         % Helper function to compute q_link based on geometry and type
-├── F_T_max.m               % Recursive function to compute CDF F_T_max(k) for multilevel hierarchy
-└── README.txt              % Documentation file
+---
 
-🧠 Project Objective
+🎯 Project Overview  
 
-To evaluate and compare the scaling behavior and performance of GHZ entanglement distribution under:
+We analyze entanglement distribution in quantum repeater networks using two strategies:  
 
-- Centralized GHZ generation (all photons routed to a central switch node)
-- Decentralized GHZ generation (photons fused hierarchically at distributed fusion nodes)
+1️⃣ Centralized GHZ Distribution  
+🔹 A central node (switch) collects photons and distributes GHZ states.  
+🔹 Requires long-distance teleportation.  
+🔹 Higher latency but potentially more efficient with high-fidelity links.  
 
-The study includes 2D hierarchical repeater networks, with emphasis on the impact of parameters like:
+2️⃣ Decentralized GHZ Distribution  
+🔹 GHZ states are fused at intermediate repeater nodes.  
+🔹 Uses local fusion operations rather than a central switch.  
+🔹 Potentially faster and scalable, reducing bottlenecks.  
 
-- Number of nodes/qubits (N)
-- Number of hierarchy levels (m)
-- Link success probability (q_link)
-- Bell State Measurement success probability (q_BSM)
-- Fusion success probability (q_Fuse)
-- Neighboring entangled node distance (L_0_in)
+---
 
-📈 Rate Model Description
+🏗 Mathematical Model  
 
-Each rate function models the expected maximum completion time for successful GHZ distribution and computes the average rate as:
+The entanglement distribution rate is modeled as:  
 
-Rate = (GHZ teleportation success probability) / (Expected Total Time)
+    Rate = (GHZ teleportation success probability) / (Expected Total Time)
 
-Rate functions include:
-- Tail-sum formulas
-- Nested summations
-- Recursive CDF generation for hierarchical levels
+Rate functions incorporate:  
+- Tail-sum formulas  
+- Nested summations  
+- Recursive CDF generation  
 
-▶️ How to Run
+💡 Key Parameters:  
+| Parameter | Description |
+|-----------|-------------|
+| N | Total nodes/qubits in the network |
+| m | Number of hierarchy levels |
+| q_link | Probability of successful entanglement link |
+| q_BSM | Bell State Measurement success probability |
+| q_Fuse | Fusion success probability |
+| L₀_in | Distance between neighboring entangled nodes |
 
-1. Clone the repository:
-   git clone https://github.com/mohadesehazari98/Centralized_VS_Decentralized.git
-   cd Centralized_VS_Decentralized/Average_Entanglement_Distribution_Rate
+---
 
-2. Open MATLAB and run:
-   example_plot_rates
+▶️ Running the Code  
 
-This will generate comparison plots of rate vs distance for different architecture types and hierarchy levels.
+Step 1: Clone the Repository  
+    git clone https://github.com/mohadesehazari98/Centralized_VS_Decentralized.git  
+    cd Centralized_VS_Decentralized/Average_Entanglement_Distribution_Rate  
 
-📊 Example Output
+Step 2: Run in MATLAB  
+    Open MATLAB and execute:  
+        example_plot_rates  
 
-- Rate vs Distance curves for:
-  - Centralized vs Decentralized (1D and 2D)
-  - Different hierarchy levels (m = 1, 2, 3)
+This will generate comparison plots showing the rate vs. distance for different architectures.  
 
-These help visualize the trade-offs between different network designs.
+---
 
-📎 Dependencies
+📊 Sample Output  
 
-- MATLAB R2020+ or later
-- No external toolboxes required
+The code produces visualizations comparing Centralized vs. Decentralized GHZ distribution:  
+✅ Rate vs. Distance for 1D and 2D networks  
+✅ Effect of hierarchy levels (m = 1, 2, 3)  
+✅ Trade-offs between network designs  
 
-✍️ Author
+---
 
+🔧 Dependencies  
+- MATLAB R2020+ (No additional toolboxes required)  
+
+---
+
+👩‍💻 Author  
 Mohadeseh Azari  
-📧 mohadesehazari1998@gmail.com
+📧 mohadesehazari1998@gmail.com  
 
-📜 License
+---
 
-This project is released under the MIT License. Feel free to use, modify, and cite.
+📜 License  
+Released under the MIT License – Feel free to use, modify, and cite!  
 
-⭐️ If you find this work useful...
-Please consider giving a star to the repository and sharing it with your peers!
+⭐️ If you find this useful, please give it a star!  
+
+🚀 Quantum networks are the future—let’s optimize them together! 🚀  
