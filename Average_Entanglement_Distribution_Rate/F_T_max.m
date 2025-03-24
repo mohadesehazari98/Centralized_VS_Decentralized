@@ -82,7 +82,7 @@ else
         exponent = floor(k/u);
         
         % Recursive call to compute lower-level F_T_max
-        F_T_k = F_T_k + p_n1 * F_T_max(exponent, m-1, N, q_BSM, q_link);
+        F_T_k = F_T_k + p_n1 * F_T_max(exponent, m-1, N, q_BSM, q_Fuse, q_link, t);
     end
     
     % Raise the sum to the N-th power due to maximum over N systems
