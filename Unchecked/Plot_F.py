@@ -9,7 +9,7 @@ L_0_in = np.linspace(1e-3, 500, 100000)  # Start from a small number close to 0
 mem_depolar_prob = 1e-2
 link_depolar_prob = 0
 bsm_depolar_prob = 0
-bsm_success_prob = 1 - 1e-4
+bsm_success_prob = 0.98
 ghz_fidelity = 1
 
 # Define different colors for plotting
@@ -21,10 +21,10 @@ plt.figure(figsize=(8, 5))
 for idx, num_remote_nodes in enumerate([3, 4]):
     # Compute GHZ success probability
     GHZ_success_prob = Rate_Factory(q_BSM=bsm_success_prob, N=num_remote_nodes, 
-                                    delta_t=1, L_0_in=L_0_in)
+                                    delta_t=1, L_0_in=(L_0_in/2))
 
     # Compute F_target fidelity
-    F_target = factory_fidelity(num_remote_nodes, L_0_in, mem_depolar_prob, link_depolar_prob,
+    F_target = factory_fidelity(num_remote_nodes, (L_0_in/2), mem_depolar_prob, link_depolar_prob,
                                 bsm_depolar_prob, ghz_fidelity)
 
     # Compute F_TwoDim fidelity

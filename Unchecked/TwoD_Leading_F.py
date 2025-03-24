@@ -1,3 +1,10 @@
+"""
+Ref: This code has been motivated by (Leading_F.py),
+the original authorship is preserved to respect the initial authors.
+Mohadeseh Azari / Department of Informatics and Networked Systems / 
+School of Computing and Information / University of Pittsburgh / 
+Pittsburgh,PA / moa125@pitt.edu'
+"""
 from Leading_F import fidelity_to_depolarizing_prob, _check_set
 import itertools
 
