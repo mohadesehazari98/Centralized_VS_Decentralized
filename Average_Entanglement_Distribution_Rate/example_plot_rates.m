@@ -1,3 +1,6 @@
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 clear; clc;
 % This script plots the average rate of multipartite entanglement distribution
 % as a function of end-node distance in both centralized and decentralized schemes.

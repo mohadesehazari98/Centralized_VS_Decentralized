@@ -1,4 +1,7 @@
 function [Rate_out] = Rate_Cent(q_BSM, N, delta_t, L_0_in)
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 % This function calculates the average rate of distributing N-qubit GHZ
 % entangled state using a centralized switch.
 

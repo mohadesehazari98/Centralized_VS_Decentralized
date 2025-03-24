@@ -1,4 +1,7 @@
 function result = F_T_max(k, m, N, q_BSM, q_Fuse, q_link, t)
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 % F_T_max recursively computes the CDF of the maximum completion time T_max
 % for a hierarchical (multi-level) quantum repeater system.
 %

@@ -1,9 +1,11 @@
 """
-This code can be used to evaluate the analytical results for the rate and fidelity of GHZ-state distribution
+Ref: This code has been modified, and the original authorship is preserved to respect the initial authors.
+----
+This code can be used to evaluate the analytical results for the fidelity of GHZ-state distribution
 on a symmetric star-shaped network using a factory node that are presented in the paper
 "Analysis of Multipartite Entanglement Distribution using a Central Quantum-Network Node"
 by Guus Avis, Filip Rozpędek and Stephanie Wehner.
-It includes leading-order results for the rate and fidelity, and a lower bound for the fidelity.
+It includes leading-order results for the fidelity.
 
 We note that a different convention for the depolarizing channel is used in this file than in the paper.
 In the paper, a depolarizing parameter with param p has the action on one qubit

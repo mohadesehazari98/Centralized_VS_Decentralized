@@ -1,4 +1,7 @@
 function q_link_values = link_gen_prob(t, L_0_in, m, N)
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 % link_gen_prob computes the probability of successful link generation q_link
 % based on repeater type (centralized/decentralized), system parameters, and geometry.
 %

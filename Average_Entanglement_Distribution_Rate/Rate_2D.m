@@ -1,4 +1,7 @@
 function [Rate_out] = Rate_2D(q_BSM, q_Fuse, N, delta_t, L_0_in, m, k_max, t)
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 % This function computes the average rate for distributing N-qubit GHZ entanglement 
 % through an m-level 2D repeater approach, utilizing an either centralized or 
 % decentralized switch for the generation of the parent entanglement.

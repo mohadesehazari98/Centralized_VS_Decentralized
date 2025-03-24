@@ -1,4 +1,7 @@
 function Rate_out = Rate_Decent(q_BSM, q_Fuse, N, delta_t, L_0_in, k_max)
+% Ref: Mohadeseh Azari / Department of Informatics and Networked Systems / 
+% School of Computing and Information / University of Pittsburgh / 
+% Pittsburgh,PA / moa125@pitt.edu
 % Rate_Decent calculates the average GHZ entanglement distribution rate
 % for an N-qubit system using a decentralized switching approach.
 %
